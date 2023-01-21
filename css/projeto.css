@@ -299,13 +299,13 @@ span{
 	border-radius: 10%;
 }
 .flip-box-back {
-    background-color: green;
+    background-color: ligthgrey;
     color: white;
     transform: rotateY(180deg);
 	border-radius: 10%;
 }
 .apadrinhar{
-	background: white;
+	background: lightgrey;
     box-shadow: 0 3px 0 rgba(0, 0, 0, .3),
                   0 2px 7px rgba(0, 0, 0, 0.2);
     font-size: 14px;
@@ -317,19 +317,18 @@ span{
     text-shadow:1px 1px 0 #FFF;
     padding: 5px 15px;
     position: relative;
-    width: 80px;
+    width: 200px;
+	height: 80px;
 	border-radius: 15%;
+
 }
 .flip-box-back button{
 	border: none;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	background-color: white;
-	cursor: pointer;
-
-}
-.apadrinhar:hover, .apadrinhar:hover button{
 	background-color: lightgrey;
-	transition: background-color 0.2s ease;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 20px;
 
 }
 @media (max-width:1025px){
