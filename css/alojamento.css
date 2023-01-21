@@ -25,12 +25,10 @@ main {
 	max-height: 20rem;
 	border-radius: 0.6rem;
 }
-
 .all-alojamento{
 	display: grid;
 	grid-template-columns: 1fr;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	
 }
 .info-alojamento{
   padding-left: 1rem;
@@ -230,7 +228,7 @@ span{
     transform: rotate(45deg);
     top:0;
 }
-@media (min-width: 886px) {
+@media (min-width: 970px) {
     .nav{
         max-height: none;
         top: 0;

@@ -194,7 +194,7 @@ span{
     transform: rotate(45deg);
     top:0;
 }
-@media (min-width: 886px) {
+@media (min-width: 970px) {
     .nav{
         max-height: none;
         top: 0;
