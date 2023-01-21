@@ -1,0 +1,213 @@
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+}
+.firstletter{
+    color: green;
+    font-size: 40px;
+}
+.geres{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;;
+    padding-bottom: 20px;
+    padding: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.geres2{
+    text-align: justify;
+}
+@media (max-width: 530px){
+	.geres2{
+		text-align: center;
+	}
+}
+/*footer*/
+footer{
+    background-color: black;
+    padding: 30px;
+    margin: 0px;
+    color: lightgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.redesocial{
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px black;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+}
+.item1{
+    text-align: justify;
+    margin-left: 40px;
+}
+.item2{
+    text-align: justify;
+    margin-right: 40px; 
+}
+.item3{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    text-align: center;
+    font-size: 10px;
+}
+.item3 a{
+    color: white;
+}
+.item4{
+    display: flex;
+    justify-content: center;
+    font-size:15px;
+}
+span{
+    color: green;
+}
+@media (max-width: 715px){
+    .redesocial{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (max-width: 480px){
+    .redesocial{
+        width: 35px;
+        height: 35px;
+    }
+    .item{
+        display: sticky;
+        text-align: center;
+        gap: 50px;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .item3{
+        font-size: 8px;
+    }
+    .item4{
+        font-size: 8px
+    }
+}
+
+/*Parte do menu*/
+.header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    z-index: 9;
+}
+.logo{
+    display: inline-block;
+    color: green;
+    font-size: 60px;
+    margin-left: 45px;
+    margin-top: 0px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+}
+.menu a{
+    display:block;
+    padding: 30px;
+    color: lightgrey;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.menu a:hover{
+    background-color: green;
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+.hamb-line{
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamb-line::before,
+.hamb-line:after{
+    background: green;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+.side-menu{
+    display: none;
+}
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+@media (min-width: 886px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+        display: grid;
+        place-items: center;
+
+    }
+    .menu a{
+        display:inline;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: white;
+    }
+    .hamb{
+        display: none;
+    }
+}
