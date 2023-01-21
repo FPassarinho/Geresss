@@ -8,5 +8,4 @@ let searchBar = () =>{
             items[i].parentNode.parentNode.style.display = "none";
         }
     }
-
 }
